@@ -111,7 +111,7 @@ than the slot allows.
 
 <div class="table-wrap" markdown="1">
 
-| Component | Weight |
+| Component | Weight (Tentative) |
 | --- | --- |
 | Assignments | 20% |
 | Mid-semester exam | 15% |
@@ -124,11 +124,11 @@ Project weight splits as follows.
 
 <div class="table-wrap" markdown="1">
 
-| Project component | Weight |
+| Project component | Weight (Tentative) |
 | --- | --- |
 | Timeline document | 5% |
-| Mid submission | 15% |
-| Final submission and demo | 20% |
+| Mid submission | 10% |
+| Final submission and demo | 25% |
 
 </div>
 
