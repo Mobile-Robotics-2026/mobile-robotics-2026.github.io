@@ -6,14 +6,28 @@
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script>
+      // Inline so the stored theme applies before first paint.
+      try {
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (error) {
+        console.warn("Theme preference could not be read.", error);
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
-      <h1>{{ site.title }}</h1>
-      <p class="subtitle">{{ site.subtitle }}</p>
+      <div>
+        <h1>{{ site.title }}</h1>
+        <p class="subtitle">{{ site.subtitle }}</p>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button">Dark</button>
     </header>
     <main>
       {{ content }}
     </main>
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   </body>
 </html>

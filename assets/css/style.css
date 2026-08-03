@@ -11,26 +11,28 @@
   --sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #161616;
-    --fg: #e4e4e4;
-    --muted: #9a9a9a;
-    --rule: #333333;
-    --rule-strong: #5a5a5a;
-    --link: #cfcfcf;
-    --band: #1f1f1f;
-    --band-alt: #1b1b1b;
-  }
+:root[data-theme="dark"] {
+  --bg: #161616;
+  --fg: #e4e4e4;
+  --muted: #9a9a9a;
+  --rule: #333333;
+  --rule-strong: #5a5a5a;
+  --link: #cfcfcf;
+  --band: #1f1f1f;
+  --band-alt: #1b1b1b;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 4rem;
+  padding: 2.5rem 1.25rem 5rem;
   max-width: 62rem;
   background: var(--bg);
   color: var(--fg);
@@ -38,6 +40,11 @@ body {
   font-size: 17px;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--band);
 }
 
 a {
@@ -50,46 +57,83 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
+a:focus-visible,
+img:focus-visible {
+  outline: 2px solid var(--rule-strong);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .site-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
   border-bottom: 3px double var(--rule-strong);
   padding-bottom: 0.9rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 0;
+}
+
+.theme-toggle {
+  flex: 0 0 auto;
+  background: none;
+  color: var(--muted);
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  padding: 0.3rem 0.7rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--fg);
+  border-color: var(--fg);
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: -0.015em;
 }
 
 .site-header .subtitle {
-  margin: 0.3rem 0 0;
+  margin: 0.35rem 0 0;
   color: var(--muted);
   font-family: var(--sans);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 h2 {
-  margin: 3rem 0 0.9rem;
+  margin: 3rem 0 1rem;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--rule-strong);
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: -0.01em;
+  scroll-margin-top: 1rem;
 }
 
 h3 {
-  margin: 1.9rem 0 0.4rem;
+  margin: 2rem 0 0.5rem;
   font-family: var(--sans);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
+  scroll-margin-top: 1rem;
 }
 
 p,
@@ -98,17 +142,20 @@ li {
 }
 
 ul {
-  padding-left: 1.2rem;
+  padding-left: 1.15rem;
 }
 
 li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
 nav.toc {
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
+  padding: 0.75rem 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
   font-family: var(--sans);
-  font-size: 0.86rem;
+  font-size: 0.85rem;
 }
 
 nav.toc ul {
@@ -126,16 +173,49 @@ nav.toc li {
 nav.toc li:not(:last-child)::after {
   content: "/";
   color: var(--rule-strong);
-  margin: 0 0.6rem;
+  margin: 0 0.55rem;
 }
 
 nav.toc a {
   text-decoration: none;
+  color: var(--muted);
   border-bottom: 1px solid transparent;
 }
 
 nav.toc a:hover {
+  color: var(--fg);
   border-bottom-color: var(--rule-strong);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+  margin: 0.75rem 0 0.5rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.person-text {
+  flex: 1 1 auto;
+}
+
+/* Kramdown wraps the img in a paragraph, which is the flex item here. */
+.person > p {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.person-text p {
+  margin: 0;
+}
+
+.person-photo {
+  flex: 0 0 auto;
+  width: 108px;
+  border: 1px solid var(--rule-strong);
 }
 
 .table-wrap {
@@ -161,11 +241,9 @@ td {
 }
 
 th {
-  position: sticky;
-  top: 0;
   background: var(--band);
   border-bottom: 1px solid var(--rule-strong);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -214,11 +292,36 @@ tbody tr:last-child td {
 }
 
 .schedule td:nth-child(5) {
+  width: 22rem;
   color: var(--muted);
 }
 
-.schedule td:nth-child(5) a {
+.schedule td a {
   color: var(--fg);
+  text-decoration-color: var(--rule);
+}
+
+ul.refs {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.96rem;
+}
+
+ul.refs li {
+  max-width: 48rem;
+  margin-bottom: 0.65rem;
+  padding-left: 1.4rem;
+  text-indent: -1.4rem;
+}
+
+ul.refs li::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 1px;
+  margin-right: 0.55rem;
+  vertical-align: middle;
+  background: var(--rule-strong);
 }
 
 code {
@@ -244,13 +347,21 @@ code {
     font-size: 1.7rem;
   }
 
+  .person {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+
   table {
     font-size: 0.82rem;
   }
 
   .schedule td:nth-child(3),
-  .schedule td:nth-child(4) {
+  .schedule td:nth-child(4),
+  .schedule td:nth-child(5) {
     min-width: 12rem;
+    width: auto;
   }
 }
 
@@ -268,11 +379,11 @@ code {
     overflow: visible;
   }
 
-  th {
-    position: static;
-  }
-
   tbody tr {
     break-inside: avoid;
+  }
+
+  .person-photo {
+    width: 80px;
   }
 }
