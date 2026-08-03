@@ -25,7 +25,7 @@ something you can debug.
 
 Prerequisite: linear algebra and probability, plus enough Python to handle numpy and a
 point cloud library. Some math revision is scheduled mid-course (least squares, SVD,
-Levenberg-Marquardt). 
+Levenberg-Marquardt).
 
 ### Instructor
 
@@ -50,7 +50,7 @@ Center, IIIT Hyderabad. Office hours by appointment.
 
 Lectures: Mondays and Thursdays, 2:05 PM to 2:30 PM.
 
-Slides, class notes and some resources will be on Moodle. 
+Slides, class notes and some resources will be on Moodle.
 
 <div class="table-wrap" markdown="1">
 
@@ -113,10 +113,10 @@ than the slot allows.
 
 | Component | Weight (Tentative) |
 | --- | --- |
-| Assignments | 20% |
-| Mid-semester exam | 15% |
-| End-semester exam | 25% |
-| Project | 40% |
+| Assignments | 30% |
+| Mid-semester exam | 20% |
+| End-semester exam | 20% |
+| Project | 30% |
 
 </div>
 
@@ -127,8 +127,8 @@ Project weight splits as follows.
 | Project component | Weight (Tentative) |
 | --- | --- |
 | Timeline document | 5% |
-| Mid submission | 10% |
-| Final submission and demo | 25% |
+| Mid submission | 7% |
+| Final submission and demo | 18% |
 
 </div>
 
@@ -155,7 +155,7 @@ Project weight splits as follows.
 
 ## Project
 
-Teams of three to four. The project runs the whole semester and is submitted in three
+Teams of two to three. The project runs the whole semester and is submitted in three
 parts on Moodle: a timeline document, a mid submission, and a final submission with a
 demo.
 
