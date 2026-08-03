@@ -1,0 +1,278 @@
+:root {
+  --bg: #fbfbfb;
+  --fg: #1a1a1a;
+  --muted: #6a6a6a;
+  --rule: #d2d2d2;
+  --rule-strong: #9c9c9c;
+  --link: #333333;
+  --band: #f0f0f0;
+  --band-alt: #f6f6f6;
+  --serif: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161616;
+    --fg: #e4e4e4;
+    --muted: #9a9a9a;
+    --rule: #333333;
+    --rule-strong: #5a5a5a;
+    --link: #cfcfcf;
+    --band: #1f1f1f;
+    --band-alt: #1b1b1b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  max-width: 62rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--link);
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+.site-header {
+  border-bottom: 3px double var(--rule-strong);
+  padding-bottom: 0.9rem;
+  margin-bottom: 1.75rem;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.site-header .subtitle {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 3rem 0 0.9rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule-strong);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  margin: 1.9rem 0 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+p,
+li {
+  max-width: 46rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+nav.toc {
+  margin-bottom: 2rem;
+  font-family: var(--sans);
+  font-size: 0.86rem;
+}
+
+nav.toc ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav.toc li {
+  margin: 0;
+}
+
+nav.toc li:not(:last-child)::after {
+  content: "/";
+  color: var(--rule-strong);
+  margin: 0 0.6rem;
+}
+
+nav.toc a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+nav.toc a:hover {
+  border-bottom-color: var(--rule-strong);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1.25rem 0 1.5rem;
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.8rem;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: var(--band);
+  border-bottom: 1px solid var(--rule-strong);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--band-alt);
+}
+
+tbody tr:hover {
+  background: var(--band);
+}
+
+td {
+  border-bottom: 1px solid var(--rule);
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.schedule tr:has(.exam) td {
+  background: var(--band);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.schedule td:nth-child(1) {
+  width: 2.5rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.schedule td:nth-child(2) {
+  width: 4.5rem;
+  white-space: nowrap;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.schedule td:nth-child(3) {
+  width: 10rem;
+  font-weight: 600;
+}
+
+.schedule td:nth-child(5) {
+  color: var(--muted);
+}
+
+.schedule td:nth-child(5) a {
+  color: var(--fg);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: var(--band);
+  padding: 0.1em 0.32em;
+  border-radius: 2px;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 46rem) {
+  body {
+    font-size: 16px;
+    padding-top: 1.75rem;
+  }
+
+  .site-header h1 {
+    font-size: 1.7rem;
+  }
+
+  table {
+    font-size: 0.82rem;
+  }
+
+  .schedule td:nth-child(3),
+  .schedule td:nth-child(4) {
+    min-width: 12rem;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    font-size: 10pt;
+  }
+
+  nav.toc {
+    display: none;
+  }
+
+  .table-wrap {
+    overflow: visible;
+  }
+
+  th {
+    position: static;
+  }
+
+  tbody tr {
+    break-inside: avoid;
+  }
+}

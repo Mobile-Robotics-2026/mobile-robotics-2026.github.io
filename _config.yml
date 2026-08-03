@@ -1,0 +1,16 @@
+title: Mobile Robotics
+subtitle: Monsoon 2026
+description: Course page for Mobile Robotics, Monsoon 2026.
+lang: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - flake.nix
+  - flake.lock
+  - README.md
+  - result
+  - .direnv
