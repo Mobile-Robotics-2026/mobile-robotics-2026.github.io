@@ -191,9 +191,9 @@ timeline document is due.
 
 ## Policies
 
-Late submissions: each student has three late days for the semester, usable on
+Late submissions: each student has five late days for the semester, usable on
 assignments in whole-day units. Once they run out, late work loses 20% per day and is not
-accepted after three days. Project deadlines do not take late days.
+accepted after five days. Project deadlines do not take late days.
 
 Collaboration: discuss ideas with anyone. Write your own code and your own text.
 Copying code from a classmate, a previous year's submission, or an unattributed online
