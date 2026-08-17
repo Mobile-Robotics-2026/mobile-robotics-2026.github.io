@@ -138,8 +138,8 @@ Project weight splits as follows.
 
 | Item | Date |
 | --- | --- |
-| Assignment 1 released | Aug 13 |
-| Assignment 1 due | Aug 27 |
+| Assignment 1 released | Aug 17 |
+| Assignment 1 due | Sep 2 |
 | Project timeline document due | Sep 3 |
 | Mid-semester exam | Sep 24 |
 | Project mid submission due | Sep 28 |
