@@ -675,7 +675,7 @@ Harley et al., Simple-BEV, ICRA 2023;
 
 A problem you found yourself beats anything on this page. Bring one from a lab you work
 in, a paper you read and disagreed with, a robot you already have access to. The list
-exists so nobody is stuck without a starting point, not because these are the 26 good
+exists so nobody is stuck without a starting point, not because these are the 24 good
 ideas.
 
 Write the proposal in the same shape as a timeline document: the problem, the data or
