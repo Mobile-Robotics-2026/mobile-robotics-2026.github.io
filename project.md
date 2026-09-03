@@ -18,7 +18,7 @@ permalink: /project/
 
 ## How this works
 
-There are 26 projects on this page, in two groups. The first fifteen are built on things
+There are 24 projects on this page, in two groups. The first fifteen are built on things
 the course actually teaches. They run on public data or on hardware the lab already owns,
 and each one comes with a baseline you have to beat and a number you have to report. The
 last eleven are harder. Nobody has settled the method, the answer might be "no", and if
