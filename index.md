@@ -140,11 +140,14 @@ Project weight splits as follows.
 | --- | --- |
 | Assignment 1 released | Aug 17 |
 | Assignment 1 due | Sep 2 |
-| Project timeline document due | Sep 3 |
+| Project list released | Sep 3 |
+| Project team and preference form due | Sep 10 |
+| Project mentors assigned | Sep 14 |
+| Project timeline document due | Sep 17 |
 | Mid-semester exam | Sep 24 |
-| Project mid submission due | Sep 28 |
 | Assignment 2 released | Oct 5 |
 | Assignment 2 due | Oct 19 |
+| Project mid submission due | Oct 26 |
 | Assignment 3 released | Oct 29 |
 | Assignment 3 due | Nov 12 |
 | Final project submission due | Nov 23 |
@@ -155,19 +158,29 @@ Project weight splits as follows.
 
 ## Project
 
-Teams of two to three. The project runs the whole semester and is submitted in three
+Teams of two or three. The project runs the whole semester and is submitted in three
 parts on Moodle: a timeline document, a mid submission, and a final submission with a
 demo.
+
+Twenty four projects are listed on the [project page](/project/), in two groups: fifteen
+are much closer to what is taught in course, and the rest 9 sit closer to open research. That page
+also carries the dates, the submission format, and how mentors are assigned.
+
+Every team gets a TA mentor. Talk to the TAs before you fill the preference form, tell
+them what you want to build, and name a first and second choice of mentor. Where a
+project sits closer to a different TA's work than the one you named, we will reassign it
+to whoever has the most experience in the topic. Mentors are posted on Sep 14, three
+days before the timeline document is due.
 
 The timeline document fixes what you are building, the dataset or robot you are building
 it on, and who does what by when. Pick a problem where you can show a metric, not a video
 alone: trajectory error against ground truth, map consistency after loop closure,
 reprojection error before and after bundle adjustment, disparity error on a stereo
-benchmark.
+benchmark. Qual & Quant are both important.
 
 Bring your own problem if you have one. A topic you found yourself, in a lab, in a paper
-you liked, or on a robot you already work with, is preferred over anything on the list
-below. The list exists so that nobody is stuck without a starting point.
+you liked, or on a robot you already work with, is preferred over anything on the list.
+The list exists so that nobody is stuck without a starting point.
 
 Aim the final submission at a venue. A semester is enough to get a workshop paper or a
 short paper out of a good project, and past projects have grown into ICRA, IROS, RA-L and
@@ -176,18 +189,8 @@ and pick the evaluation protocol the venue expects (a public benchmark, a named 
 ablations against a baseline) from day one rather than adding it in November. The TAs will
 read drafts.
 
-Starting points:
-
-- LIDAR odometry and mapping on a public sequence, with loop closure and pose graph optimization.
-- Occupancy mapping with dynamic obstacle handling, evaluated against a labelled sequence.
-- LIDAR to camera calibration, including an error analysis of how the estimate degrades with fewer correspondences.
-- Monocular visual odometry with scale recovery from a known constraint.
-- Structure from motion on a small image set, ending in bundle adjustment.
-- Dense stereo depth, comparing block matching against a learned baseline.
-- Moving object detection from epipolar geometry in a driving sequence.
-
-Anything else is fine if it uses the geometry taught here. Clear it with a TA before the
-timeline document is due.
+Anything not on the project page is fine if it uses the geometry taught here. Clear it
+with a TA before Sep 10, so the mentor assignment can account for it.
 
 ## Policies
 

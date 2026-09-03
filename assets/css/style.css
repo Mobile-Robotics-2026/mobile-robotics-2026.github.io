@@ -301,6 +301,44 @@ tbody tr:last-child td {
   text-decoration-color: var(--rule);
 }
 
+.projects h3 {
+  margin: 2.5rem 0 0.35rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-transform: none;
+  color: var(--fg);
+}
+
+.project-meta {
+  margin: 0.5rem 0 0.8rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.project-refs {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.project-refs a {
+  color: var(--muted);
+}
+
+.project-refs a:hover {
+  color: var(--fg);
+}
+
 ul.refs {
   list-style: none;
   padding-left: 0;
