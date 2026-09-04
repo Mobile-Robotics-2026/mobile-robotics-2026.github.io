@@ -19,9 +19,9 @@ permalink: /project/
 ## How this works
 
 There are 24 projects on this page, in two groups. The first fifteen are built on things
-the course actually teaches. They run on public data or on hardware the lab already owns,
-and each one comes with a baseline you have to beat and a number you have to report. The
-last eleven are harder. Nobody has settled the method, the answer might be "no", and if
+the course covers. They run on public data or on hardware the lab already has,
+and each one has a baseline we expect you to beat and a number you have to report. The
+last projects are harder. Open about the method implementation & ideation, the answer might be "no" that this doesn't work, and if
 it goes well you might have a paper too.
 
 Neither group is worth more marks. A grounded project done properly (ablations run,
@@ -41,8 +41,8 @@ in your timeline document.
 Find your own team. If you don't have one by Sep 8, tell a TA and we'll pair you with
 whoever else is in the same spot.
 
-More than one team can take the same project. If eight teams want the racing bot we'll
-ask some of you to move, so put a second choice on the form.
+More than one team can take the same project. If eight teams want the feed forward at scale we'll
+ask some of you to move, so put your preferences wisely in the form.
 
 ## Timeline
 
@@ -60,7 +60,7 @@ ask some of you to move, so put a second choice on the form.
 
 </div>
 
-The form is on Moodle. It asks for your team, a first and second choice of project, and a
+The form will be shared soon on Moodle. It asks for your team, a first and second choice of project, and a
 first and second choice of mentor.
 
 ## Mentors
