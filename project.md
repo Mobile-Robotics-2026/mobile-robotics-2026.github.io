@@ -185,24 +185,30 @@ References: Dhall et al., LiDAR camera calibration using 3D-3D point corresponde
 
 ### 4. Camera calibration you wrote yourself
 
-Any camera. Lab hardware. 
+Any camera. Standard + custom ChArUco board.
 {: .project-meta}
 
-DLT on a 3D target, then RQ to get K, R and t out of the projection matrix. Then Zhang's
-planar method: one homography per view, closed form intrinsics from the image of the
-absolute conic, nonlinear refinement over all views with radial distortion. Compare
-against `cv2.calibrateCamera` on the same images.
+Start with a standard ChArUco board and implement calibration yourself: detect the
+ChArUco corners, estimate one homography per view, use Zhang's planar method to recover
+the intrinsics, then jointly refine intrinsics, poses and radial distortion by minimizing
+reprojection error. Compare against OpenCV on the same images.
+
+Then repeat the experiment using the **custom ChArUco board provided in the lab**, which
+has missing regions and large cut-outs. Use marker IDs to handle partial visibility and
+establish the correct correspondences even when only part of the board is visible.
+
+<img src="/assets/img/charuco_calib_002.png" alt="Custom ChArUco calibration board" width="320">
 
 Report focal length, principal point and distortion against OpenCV, and how much they
-scatter as you go from 3 images to 30. Then take all your images with the board nearly
-fronto parallel and watch what happens to the focal length. That's the failure everyone
-hits and nobody can explain, so explain it.
+scatter as you go from 3 images to 30. Compare the standard and custom boards, then take
+all your images nearly fronto-parallel and explain why the focal length becomes poorly
+constrained even when reprojection error looks small.
 
 References: [Zhang, a flexible new technique for camera
 calibration](https://www.microsoft.com/en-us/research/publication/a-flexible-new-technique-for-camera-calibration/);
 Hartley and Zisserman, ch. 6 and 7;
-[OpenCV calibration](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html);
-[Stachniss, direct linear transform](https://www.youtube.com/watch?v=3NcQbZu6xt8).
+[OpenCV ChArUco](https://docs.opencv.org/4.x/df/d4a/tutorial_charuco_detection.html);
+[OpenCV calibration](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html).
 {: .project-refs}
 
 ### 5. Structure from motion ending in bundle adjustment
