@@ -188,21 +188,24 @@ References: Dhall et al., LiDAR camera calibration using 3D-3D point corresponde
 Any camera. Standard + custom ChArUco board.
 {: .project-meta}
 
-Start with a standard ChArUco board and implement calibration yourself: detect the
-ChArUco corners, estimate one homography per view, use Zhang's planar method to recover
-the intrinsics, then jointly refine intrinsics, poses and radial distortion by minimizing
-reprojection error. Compare against OpenCV on the same images.
+Your task is to build a camera calibration pipeline from scratch. Start with a standard
+ChArUco board: detect its corners, estimate one homography per view, use Zhang's planar
+method to recover the camera intrinsics, and refine the intrinsics, poses and radial
+distortion by minimizing reprojection error. Compare your result against OpenCV using the
+same images.
 
-Then repeat the experiment using the **custom ChArUco board provided in the lab**, which
-has missing regions and large cut-outs. Use marker IDs to handle partial visibility and
-establish the correct correspondences even when only part of the board is visible.
+Once the pipeline works, apply it to the **custom ChArUco board provided in the lab**.
+Unlike a regular board, this target contains missing regions and large cut-outs, so your
+method must use marker IDs and the known board geometry to correctly establish
+correspondences when only part of the board is visible.
 
 <img src="/assets/img/charuco_calib_002.png" alt="Custom ChArUco calibration board" width="320">
 
-Report focal length, principal point and distortion against OpenCV, and how much they
-scatter as you go from 3 images to 30. Compare the standard and custom boards, then take
-all your images nearly fronto-parallel and explain why the focal length becomes poorly
-constrained even when reprojection error looks small.
+Report focal length, principal point, distortion and reprojection error against OpenCV,
+and study how the estimates change as you go from 3 images to 30. Compare the standard
+and custom boards, then repeat the experiment using mostly fronto-parallel views. Explain
+why this configuration makes focal length poorly constrained even when the reprojection
+error remains small.
 
 References: [Zhang, a flexible new technique for camera
 calibration](https://www.microsoft.com/en-us/research/publication/a-flexible-new-technique-for-camera-calibration/);
