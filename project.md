@@ -63,6 +63,8 @@ ask some of you to move, so put your preferences wisely in the form.
 The form will be shared soon on Moodle. It asks for your team, a first and second choice of project, and a
 first and second choice of mentor.
 
+[Form Link](https://forms.gle/vjKYSEtppADRhBq67)
+
 ## Mentors
 
 Every team gets a TA mentor. Before you fill the form, come talk to us. Tell us what you
