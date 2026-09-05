@@ -50,8 +50,8 @@ ask some of you to move, so put your preferences wisely in the form.
 
 | Item | Date |
 | --- | --- |
-| Project list released | Sep 3 |
-| Team and project preference form due | Sep 10 |
+| Project list released | Sep 5 |
+| Team and project preference form due | Sep 12 |
 | Mentor assignment posted | Sep 14 |
 | Timeline document due | Sep 17 |
 | Mid submission due | Oct 26 |

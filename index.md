@@ -140,8 +140,8 @@ Project weight splits as follows.
 | --- | --- |
 | Assignment 1 released | Aug 17 |
 | Assignment 1 due | Sep 2 |
-| Project list released | Sep 3 |
-| Project team and preference form due | Sep 10 |
+| Project list released | Sep 5 |
+| Project team and preference form due | Sep 12 |
 | Project mentors assigned | Sep 14 |
 | Project timeline document due | Sep 17 |
 | Mid-semester exam | Sep 24 |
