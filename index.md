@@ -143,7 +143,7 @@ Project weight splits as follows.
 | Project list released | Sep 5 |
 | Project team and preference form due | Sep 13 |
 | Project mentors assigned | Sep 14 |
-| Project timeline document due | Sep 17 |
+| Project timeline document due | Oct 4 |
 | Mid-semester exam | Sep 24 |
 | Assignment 2 released | Oct 5 |
 | Assignment 2 due | Oct 19 |
@@ -164,13 +164,14 @@ demo.
 
 Twenty four projects are listed on the [project page](/project/), in two groups: fifteen
 are much closer to what is taught in course, and the rest 9 sit closer to open research. That page
-also carries the dates, the submission format, and how mentors are assigned.
+also carries the dates, the submission format, and how mentors are assigned. The full
+submission rules are in the [project instructions PDF](/assets/docs/project-details.pdf).
 
 Every team gets a TA mentor. Talk to the TAs before you fill the preference form, tell
 them what you want to build, and name a first and second choice of mentor. Where a
 project sits closer to a different TA's work than the one you named, we will reassign it
-to whoever has the most experience in the topic. Mentors are posted on Sep 14, three
-days before the timeline document is due.
+to whoever has the most experience in the topic. Mentors are posted on Sep 14, and the
+timeline document is due on Oct 4.
 
 The timeline document fixes what you are building, the dataset or robot you are building
 it on, and who does what by when. Pick a problem where you can show a metric, not a video

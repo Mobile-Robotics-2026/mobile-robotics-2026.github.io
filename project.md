@@ -53,7 +53,7 @@ ask some of you to move, so put your preferences wisely in the form.
 | Project list released | Sep 5 |
 | Team and project preference form due | Sep 13 |
 | Mentor assignment posted | Sep 14 |
-| Timeline document due | Sep 17 |
+| Timeline document due | Oct 4 |
 | Mid submission due | Oct 26 |
 | Final submission due | Nov 23 |
 | Demos | Nov 26 |
@@ -75,8 +75,8 @@ experience is closest to your project.
 Put a first and second choice on the form. You'll usually get your first choice. If a
 mentor is oversubscribed, or if your project is honestly closer to what a different TA has
 done, we'll reassign, and it goes to whoever has spent the most time on that kind of
-problem. We sort this out among ourselves and post it on Sep 14, three days before the
-timeline document is due.
+problem. We sort this out among ourselves and post it on Sep 14, well before the timeline
+document is due on Oct 4.
 
 What does a mentor do? Reads your timeline document, is the person you message when the
 project stalls, grades your submissions. Book time with them in September. Half an hour in
@@ -91,24 +91,38 @@ Everything goes on Moodle. The project is 30% of the course, split as follows.
 
 | Component | Weight | Due |
 | --- | --- | --- |
-| Timeline document | 5% | Sep 17 |
+| Timeline document | 5% | Oct 4 |
 | Mid submission | 7% | Oct 26 |
 | Final submission and demo | 18% | Nov 23, demos Nov 26 |
 
 </div>
 
-The timeline document is two pages: team, project, mentor, the dataset or robot you're
-running on, the baseline you're comparing against, the metric you're reporting, and who
-does what by when. No metric, we send it back.
+The full instructions, including page limits, file names and the LaTeX setup, are in the
+[project instructions PDF](/assets/docs/project-details.pdf). Read it before you start
+writing. Page limits are strict, all reports are in LaTeX, and AI tools can help with code
+but may not write report content (paraphrasing or polishing your own text is fine).
 
-The mid submission is code, data and results so far, a short presentation, and a two to
-three page LaTeX report. By Oct 26 the baseline has to run end to end on your data, even
-if your own method doesn't work yet. Working baseline, broken method: fine. Neither: not
-fine.
+The timeline document opens with an abstract of under half a page that pitches the idea,
+followed by at most five pages (references excluded) covering motivation, related work,
+methodology, datasets, the evaluation plan and a timeline. It has to include a motivation
+section (what existing work gets wrong) and a contributions section (how you fix it). Name
+the dataset or robot, the baseline and the metric. No metric, we send it back. Submit as
+`<TeamNameWithNoSpaces>-Timeline.pdf`.
 
-The final submission is code, data, results, a presentation with a live or recorded demo,
-and a six to eight page LaTeX report. Put the ablations in. Put the failure cases in.
-Negative results are fine as long as you measured them and can say why they happened.
+The mid submission is at most six pages plus one optional appendix page: a refined problem
+statement, progress so far, a concrete timeline for the rest of the project, and a proper
+literature review. By Oct 26 the baseline has to run end to end on your data, even if your
+own method doesn't work yet. Working baseline, broken method: fine. Neither: not fine.
+Make the repository and any video links public or share them with your mentor, and link
+any Hugging Face or WandB projects in the README. Graded on the write-up, the code and a
+viva. Submit as `<TeamNameWithNoSpaces>-Mid.zip`.
+
+The final submission is written like a research paper: at most eight pages plus two
+optional appendix pages, with limitations and future work in a separate section just before
+the references (it doesn't count toward the limit, and results placed there don't count as
+results). Include the code as a ZIP and the viva presentation as a PDF. Put the ablations
+in. Put the failure cases in. Negative results are fine as long as you measured them and
+can say why they happened. Submit as `<TeamNameWithNoSpaces>-Final.pdf`.
 
 ## Grounded projects
 
