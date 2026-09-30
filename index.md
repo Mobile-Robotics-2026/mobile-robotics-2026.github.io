@@ -48,7 +48,7 @@ Center, IIIT Hyderabad. Office hours by appointment.
 
 ## Logistics
 
-Lectures: Mondays and Thursdays, 2:05 PM to 2:30 PM.
+Lectures: Mondays and Thursdays, 2:00 PM to 3:30 PM.
 
 Slides, class notes and some resources will be on Moodle.
 
