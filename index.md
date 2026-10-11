@@ -145,8 +145,8 @@ Project weight splits as follows.
 | Project mentors assigned | Sep 14 |
 | Project timeline document due | Oct 4 |
 | Mid-semester exam | Sep 24 |
-| Assignment 2 released | Oct 5 |
-| Assignment 2 due | Oct 19 |
+| Assignment 2 released | Oct 11 |
+| Assignment 2 due | Oct 24 |
 | Project mid submission due | Oct 26 |
 | Assignment 3 released | Oct 29 |
 | Assignment 3 due | Nov 12 |
